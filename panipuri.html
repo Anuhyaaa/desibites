@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pani Puri - Famous street food from Maharashtra">
+    <meta name="theme-color" content="#1A1A1A">
     <title>Pani Puri - DesiBites</title>
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#FFF7F0}
+        #navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#1A1A1A;position:sticky;top:0;z-index:1000}
+        .nav-links a,.nav-title{color:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +34,7 @@
                 <article class="detail-card">
                     <h2>Pani Puri</h2>
                     <div class="state-badge">Maharashtra</div>
-                    <img src="images/pani-puri.jpg" alt="Delicious Pani Puri from Maharashtra" class="food-image" loading="lazy" width="700" height="400">
+                    <img src="images/pani-puri.jpg" alt="Delicious Pani Puri from Maharashtra" class="food-image" fetchpriority="high" decoding="async" width="700" height="400">
                     <div class="food-description">
                         <p>Pani Puri, also known as Golgappa or Puchka, is one of India's most beloved street foods. This delightful snack consists of crispy, hollow puris filled with a mixture of spicy tangy water (pani), tamarind chutney, potatoes, chickpeas, and onions. The burst of flavors when you bite into a pani puri is an unforgettable experience. Popular throughout Maharashtra and across India, this iconic street food brings people together at bustling street corners, where vendors skillfully prepare each puri with precision and flair.</p>
                     </div>
@@ -41,6 +49,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

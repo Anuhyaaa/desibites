@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Litti Chokha - Famous street food from Bihar">
+    <meta name="theme-color" content="#1A1A1A">
     <title>Litti Chokha - DesiBites</title>
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#FFF7F0}
+        #navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#1A1A1A;position:sticky;top:0;z-index:1000}
+        .nav-links a,.nav-title{color:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +34,7 @@
                 <article class="detail-card">
                     <h2>Litti Chokha</h2>
                     <div class="state-badge">Bihar</div>
-                    <img src="images/litti-chokha.jpg" alt="Traditional Litti Chokha from Bihar" class="food-image" loading="lazy" width="700" height="400">
+                    <img src="images/litti-chokha.jpg" alt="Traditional Litti Chokha from Bihar" class="food-image" fetchpriority="high" decoding="async" width="700" height="400">
                     <div class="food-description">
                         <p>Litti Chokha is a traditional and iconic dish from Bihar that represents the rustic flavors of rural India. Litti are round wheat flour balls stuffed with roasted gram flour (sattu) mixed with spices and herbs, which are then baked over coal or in a tandoor until crispy. These are served with chokha, a smoky mash of roasted vegetables like eggplant, tomato, and potato, seasoned with mustard oil and spices. The combination of the crispy litti and the flavorful chokha creates a unique taste experience. Often enjoyed with ghee, this dish is a symbol of Bihari cuisine and culture.</p>
                     </div>
@@ -41,6 +49,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

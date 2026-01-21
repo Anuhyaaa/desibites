@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kachori - Famous street food from Rajasthan">
+    <meta name="theme-color" content="#1A1A1A">
     <title>Kachori - DesiBites</title>
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#FFF7F0}
+        #navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#1A1A1A;position:sticky;top:0;z-index:1000}
+        .nav-links a,.nav-title{color:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +34,7 @@
                 <article class="detail-card">
                     <h2>Kachori</h2>
                     <div class="state-badge">Rajasthan</div>
-                    <img src="images/kachori.jpg" alt="Crispy Kachori from Rajasthan" class="food-image" loading="lazy" width="700" height="400">
+                    <img src="images/kachori.jpg" alt="Crispy Kachori from Rajasthan" class="food-image" fetchpriority="high" decoding="async" width="700" height="400">
                     <div class="food-description">
                         <p>Kachori is a popular snack from Rajasthan that has captured the taste buds of food lovers across India. These round, flaky pastries are deep-fried to golden perfection and filled with a spicy mixture of moong dal, peas, or other lentils seasoned with aromatic spices. The crispy outer layer gives way to a flavorful, slightly tangy filling that creates an explosion of taste in every bite. Typically served with tamarind chutney or aloo sabzi (potato curry), kachoris are a favorite breakfast or evening snack in Rajasthan and beyond.</p>
                     </div>
@@ -41,6 +49,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

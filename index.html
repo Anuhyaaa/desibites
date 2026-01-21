@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the most famous street foods from across India - DesiBites">
+    <meta name="theme-color" content="#1A1A1A">
     <title>DesiBites - Famous Street Foods of India</title>
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Critical inline CSS for above-the-fold content -->
+    <style>
+        body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#FFF7F0}
+        #navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#1A1A1A;position:sticky;top:0;z-index:1000}
+        .nav-links a,.nav-title{color:#fff}
+        .hero{padding:4rem 0;text-align:center}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
 </head>
 <body>
     <header>
@@ -35,7 +46,7 @@
                 <div class="food-grid">
                     <article class="food-card">
                         <a href="panipuri.html">
-                            <img src="images/pani-puri.jpg" alt="Pani Puri from Maharashtra" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/pani-puri.jpg" alt="Pani Puri from Maharashtra" class="food-image" fetchpriority="high" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Pani Puri</h3>
                                 <p class="state-tag">Maharashtra</p>
@@ -45,7 +56,7 @@
 
                     <article class="food-card">
                         <a href="masaladosa.html">
-                            <img src="images/masala-dosa.jpg" alt="Masala Dosa from Tamil Nadu" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/masala-dosa.jpg" alt="Masala Dosa from Tamil Nadu" class="food-image" fetchpriority="high" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Masala Dosa</h3>
                                 <p class="state-tag">Tamil Nadu</p>
@@ -55,7 +66,7 @@
 
                     <article class="food-card">
                         <a href="cholebhature.html">
-                            <img src="images/chole-bhature.jpg" alt="Chole Bhature from Punjab" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/chole-bhature.jpg" alt="Chole Bhature from Punjab" class="food-image" fetchpriority="high" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Chole Bhature</h3>
                                 <p class="state-tag">Punjab</p>
@@ -65,7 +76,7 @@
 
                     <article class="food-card">
                         <a href="momos.html">
-                            <img src="images/momos.jpg" alt="Momos from Sikkim" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/momos.jpg" alt="Momos from Sikkim" class="food-image" loading="lazy" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Momos</h3>
                                 <p class="state-tag">Sikkim</p>
@@ -75,7 +86,7 @@
 
                     <article class="food-card">
                         <a href="kachori.html">
-                            <img src="images/kachori.jpg" alt="Kachori from Rajasthan" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/kachori.jpg" alt="Kachori from Rajasthan" class="food-image" loading="lazy" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Kachori</h3>
                                 <p class="state-tag">Rajasthan</p>
@@ -85,7 +96,7 @@
 
                     <article class="food-card">
                         <a href="poha.html">
-                            <img src="images/poha.jpg" alt="Poha from Madhya Pradesh" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/poha.jpg" alt="Poha from Madhya Pradesh" class="food-image" loading="lazy" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Poha</h3>
                                 <p class="state-tag">Madhya Pradesh</p>
@@ -95,7 +106,7 @@
 
                     <article class="food-card">
                         <a href="littichokha.html">
-                            <img src="images/litti-chokha.jpg" alt="Litti Chokha from Bihar" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/litti-chokha.jpg" alt="Litti Chokha from Bihar" class="food-image" loading="lazy" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Litti Chokha</h3>
                                 <p class="state-tag">Bihar</p>
@@ -105,7 +116,7 @@
 
                     <article class="food-card">
                         <a href="alootikki.html">
-                            <img src="images/aloo-tikki.jpg" alt="Aloo Tikki from Uttar Pradesh" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/aloo-tikki.jpg" alt="Aloo Tikki from Uttar Pradesh" class="food-image" loading="lazy" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Aloo Tikki</h3>
                                 <p class="state-tag">Uttar Pradesh</p>
@@ -115,7 +126,7 @@
 
                     <article class="food-card">
                         <a href="dhokla.html">
-                            <img src="images/dhokla.jpg" alt="Dhokla from Gujarat" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/dhokla.jpg" alt="Dhokla from Gujarat" class="food-image" loading="lazy" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Dhokla</h3>
                                 <p class="state-tag">Gujarat</p>
@@ -125,7 +136,7 @@
 
                     <article class="food-card">
                         <a href="bisibelebath.html">
-                            <img src="images/bisi-bele-bath.jpg" alt="Bisi Bele Bath from Karnataka" class="food-image" loading="lazy" width="300" height="200">
+                            <img src="images/bisi-bele-bath.jpg" alt="Bisi Bele Bath from Karnataka" class="food-image" loading="lazy" decoding="async" width="300" height="200">
                             <div class="food-info">
                                 <h3>Bisi Bele Bath</h3>
                                 <p class="state-tag">Karnataka</p>
@@ -143,6 +154,7 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
+

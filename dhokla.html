@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dhokla - Famous street food from Gujarat">
+    <meta name="theme-color" content="#1A1A1A">
     <title>Dhokla - DesiBites</title>
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#FFF7F0}
+        #navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#1A1A1A;position:sticky;top:0;z-index:1000}
+        .nav-links a,.nav-title{color:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +34,7 @@
                 <article class="detail-card">
                     <h2>Dhokla</h2>
                     <div class="state-badge">Gujarat</div>
-                    <img src="images/dhokla.jpg" alt="Soft and spongy Dhokla from Gujarat" class="food-image" loading="lazy" width="700" height="400">
+                    <img src="images/dhokla.jpg" alt="Soft and spongy Dhokla from Gujarat" class="food-image" fetchpriority="high" decoding="async" width="700" height="400">
                     <div class="food-description">
                         <p>Dhokla is a savory steamed cake from Gujarat that is both healthy and delicious. Made from fermented batter of rice and chickpea flour, dhokla has a light, spongy texture and a slightly tangy flavor. After steaming, the dhokla is typically tempered with mustard seeds, curry leaves, and green chilies in hot oil, giving it an aromatic and flavorful finish. Garnished with fresh coriander and grated coconut, dhokla is often served with green chutney and is a popular breakfast or snack option. Its nutritious ingredients and unique taste make it a staple of Gujarati cuisine.</p>
                     </div>
@@ -41,6 +49,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

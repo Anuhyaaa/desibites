@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Poha - Famous street food from Madhya Pradesh">
+    <meta name="theme-color" content="#1A1A1A">
     <title>Poha - DesiBites</title>
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#FFF7F0}
+        #navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#1A1A1A;position:sticky;top:0;z-index:1000}
+        .nav-links a,.nav-title{color:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +34,7 @@
                 <article class="detail-card">
                     <h2>Poha</h2>
                     <div class="state-badge">Madhya Pradesh</div>
-                    <img src="images/poha.jpg" alt="Light and fluffy Poha from Madhya Pradesh" class="food-image" loading="lazy" width="700" height="400">
+                    <img src="images/poha.jpg" alt="Light and fluffy Poha from Madhya Pradesh" class="food-image" fetchpriority="high" decoding="async" width="700" height="400">
                     <div class="food-description">
                         <p>Poha is a light, nutritious breakfast dish made from flattened rice that holds a special place in the hearts of people from Madhya Pradesh. This simple yet delicious dish is prepared by cooking the flattened rice with mustard seeds, curry leaves, turmeric, onions, and green chilies, often garnished with coriander, sev (crispy noodles), and a squeeze of lemon. The result is a fluffy, mildly spiced dish that's both comforting and satisfying. Poha is incredibly popular as a morning meal across central India and is loved for its ease of preparation and wholesome taste.</p>
                     </div>
@@ -41,6 +49,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

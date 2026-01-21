@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Momos - Famous street food from Sikkim">
+    <meta name="theme-color" content="#1A1A1A">
     <title>Momos - DesiBites</title>
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#FFF7F0}
+        #navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#1A1A1A;position:sticky;top:0;z-index:1000}
+        .nav-links a,.nav-title{color:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +34,7 @@
                 <article class="detail-card">
                     <h2>Momos</h2>
                     <div class="state-badge">Sikkim</div>
-                    <img src="images/momos.jpg" alt="Steaming Momos from Sikkim" class="food-image" loading="lazy" width="700" height="400">
+                    <img src="images/momos.jpg" alt="Steaming Momos from Sikkim" class="food-image" fetchpriority="high" decoding="async" width="700" height="400">
                     <div class="food-description">
                         <p>Momos are delicious steamed dumplings that originated in Tibet and have become a beloved street food across Sikkim and the northeastern states of India. These delicate parcels are typically filled with minced vegetables, chicken, or buff (buffalo meat), wrapped in thin dough, and steamed to perfection. Served with a spicy red chili chutney, momos offer a perfect combination of soft texture and savory flavors. The dish has gained immense popularity throughout India and is now available in various forms - steamed, fried, or even in soup.</p>
                     </div>
@@ -41,6 +49,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

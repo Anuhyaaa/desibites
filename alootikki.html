@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aloo Tikki - Famous street food from Uttar Pradesh">
+    <meta name="theme-color" content="#1A1A1A">
     <title>Aloo Tikki - DesiBites</title>
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{margin:0;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#FFF7F0}
+        #navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;background:#1A1A1A;position:sticky;top:0;z-index:1000}
+        .nav-links a,.nav-title{color:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
 </head>
 <body>
     <header>
@@ -26,7 +34,7 @@
                 <article class="detail-card">
                     <h2>Aloo Tikki</h2>
                     <div class="state-badge">Uttar Pradesh</div>
-                    <img src="images/aloo-tikki.jpg" alt="Golden Aloo Tikki from Uttar Pradesh" class="food-image" loading="lazy" width="700" height="400">
+                    <img src="images/aloo-tikki.jpg" alt="Golden Aloo Tikki from Uttar Pradesh" class="food-image" fetchpriority="high" decoding="async" width="700" height="400">
                     <div class="food-description">
                         <p>Aloo Tikki is a beloved street food snack from Uttar Pradesh that has become popular throughout North India. These golden-brown potato patties are made from mashed potatoes mixed with aromatic spices, herbs, and sometimes peas or corn, then shallow-fried until crispy on the outside while remaining soft inside. Aloo tikki can be enjoyed on its own with chutneys or as part of chaat - topped with chickpea curry (chole), yogurt, tamarind chutney, and sev. The versatility and delicious taste of aloo tikki make it a favorite snack at street food stalls and gatherings.</p>
                     </div>
@@ -41,6 +49,6 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
